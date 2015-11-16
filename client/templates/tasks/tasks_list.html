@@ -3,7 +3,7 @@
         {{#if tasks}}
         {{#each tasks}}
         <div class="task">
-            <h1 class="title">{{title}}</h1>
+            <h1 class="title">{{title}} <span class="pull-right" style="color: #F16866;font-weight: 100;">&times;</span></h1>
             <p>{{content}}</p>
             <div>
                 <h5 class="author">{{userName owner}}</h5>
@@ -12,7 +12,11 @@
         </div>
         {{/each}}
         {{else}}
-        No tasks yet created
+        <div style="text-align: center;font-size: 40px;margin: 20% 0px;">
+            <i class="fa fa-tasks" style="display: block;font-size: 100px;">List</i>
+            No tasks yet created
+            <div><a href="#" data-toggle="modal" data-target="#createTaskModal" style="font-size: 28px; color: #00ab6b;">Create :List</a></div>
+        </div>
         {{/if}}
     </div>
 </template>
