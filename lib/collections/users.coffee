@@ -111,7 +111,10 @@ Meteor.users.attachSchema Schemas.User
 
 Meteor.users.helpers
   fullName: () ->
-    (@profile.firstName || '')  + ' ' + (@profile.lastName || '')
+    if @profile.firstName? or @profile.lastName?
+        (@profile.firstName || '')  + ' ' + (@profile.lastName || '')
+    else
+        @email()
   isAdmin: ->
     @roles.indexOf('admin') > -1
   isCustomer: ->

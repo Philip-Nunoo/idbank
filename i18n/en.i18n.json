@@ -11,5 +11,8 @@
     "userPhoneCode": "Phone code",
     "verified": "Verified",
     "email": "Email",
-    "userEmailVerified": "Email verified"
+    "userEmailVerified": "Email verified",
+
+    "title": "Title",
+    "description": "Description"
 }

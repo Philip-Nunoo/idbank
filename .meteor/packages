@@ -35,3 +35,4 @@ reywood:publish-composite
 fortawesome:fontawesome
 raix:handlebar-helpers
 iron:router
+meteorhacks:subs-manager

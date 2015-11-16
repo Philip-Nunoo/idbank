@@ -12,6 +12,8 @@ Router.map ->
     template: "dashboard"
     controller: 'CustomerController'
     data: ->
-      
+      {
+        tasks: Tasks.find().fetch()
+      }
     onAfterAction: ->
       # Session.set 'title', TAPi18n.__ 'titleCustomerDashboard'
